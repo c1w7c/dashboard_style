@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Table</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        html {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main" style="min-height: calc(100vh - 29px);">
+        <div class="container-fluid py-4">
+            <div class="row pb-4">
+                <div class="col-sm-4 mr-auto">
+                    <div class="input-group mb-2 mb-sm-3">
+                        <input type="text" placeholder="search..." class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary">GO!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-right">
+                    <button class="btn btn-primary" type="button" data-toggle="modal"
+                        data-title='快速下單' data-target="#editmodal" >快速下單</button>
+                </div>
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">品項</th>
+                                    <th scope="col">名稱</th>
+                                    <th scope="col">電郵</th>
+                                    <th scope="col">狀態</th>
+                                    <th scope="col">金額</th>
+                                    <th scope="col">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>超纖細肥皂 1盒</td>
+                                    <td>Mark
+                                        <span class="badge badge-danger badge-pill">奧客</span>
+                                    </td>
+                                    <td>Mark@mail.com</td>
+                                    <td>已出貨</td>
+                                    <td>NT$ 899</td>
+                                    <td>
+                                        <div class="btn-group" role="group"
+                                            aria-label="Button group with nested dropdown">
+                                            <button type="button" class="btn btn-outline-secondary" 
+                                            data-toggle="modal" data-title='超纖細肥皂 1盒' data-target="#editmodal" data-backdrop='static'>編輯</button>
+                                            <button type="button" class="btn btn-outline-secondary">查看</button>
+
+                                            <div class="btn-group dropright" role="group">
+                                                <button id="btnGroupDrop1" type="button"
+                                                    class="btn btn-outline-secondary dropdown-toggle"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    ...
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <a class="dropdown-item" href="#">插入</a>
+                                                    <a class="dropdown-item" href="#">修改</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#"
+                                                    data-toggle="modal" data-title='超纖細肥皂 1盒' data-target="#removemodal">刪除</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th scope="row">2</th>
+                                    <td>(保證)無泡泡沐浴乳 5罐</td>
+                                    <td>Jacob
+                                        <span class="badge badge-success badge-pill">常客</span>
+                                    </td>
+                                    <td>Jacob@mail.com</td>
+                                    <td class="text-danger">缺貨</td>
+                                    <td>NT$ 3,600</td>
+                                    <td>
+                                        <div class="btn-group" role="group"
+                                            aria-label="Button group with nested dropdown">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                            data-toggle="modal" data-title='(保證)無泡泡沐浴乳 5罐' data-target="#editmodal">編輯</button>
+                                            <button type="button" class="btn btn-outline-secondary">查看</button>
+
+                                            <div class="btn-group dropright" role="group">
+                                                <button id="btnGroupDrop1" type="button"
+                                                    class="btn btn-outline-secondary dropdown-toggle"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    ...
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <a class="dropdown-item" href="#">插入</a>
+                                                    <a class="dropdown-item" href="#">修改</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#"
+                                                    data-toggle="modal" data-title='(保證)無泡泡沐浴乳 5罐' data-target="#removemodal">刪除</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>防滑燈罩 100個</td>
+                                    <td>Larry</td>
+                                    <td>Larry@mail.com</td>
+                                    <td>已出貨</td>
+                                    <td>NT$ 10,400</td>
+                                    <td>
+                                        <div class="btn-group" role="group"
+                                            aria-label="Button group with nested dropdown">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                            data-toggle="modal" data-title='防滑燈罩 100個' data-target="#editmodal">編輯</button>
+                                            <button type="button" class="btn btn-outline-secondary">查看</button>
+
+                                            <div class="btn-group dropright" role="group">
+                                                <button id="btnGroupDrop1" type="button"
+                                                    class="btn btn-outline-secondary dropdown-toggle"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    ...
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <a class="dropdown-item" href="#">插入</a>
+                                                    <a class="dropdown-item" href="#">修改</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item text-danger" href="#"
+                                                    data-toggle="modal" data-title='防滑燈罩 100個' data-target="#removemodal">刪除</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 40%"
+                                aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <footer class='bg-light font-bolder h3 text-center text-muted'>
+        ＠ChiWeN 電商平台
+    </footer>
+
+    <!-- editModal -->
+    <div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email">用戶名稱</label>
+                            <input type="email" class="form-control  form-control-sm " placeholder="email..." id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">用戶密碼</label>
+                            <input type="password" class="form-control  form-control-sm " placeholder="password..." id="password">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="item">品項</label>
+                                <input type="text" readonly class="form-control form-control-sm" id="item">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="number">數量</label>
+                                <input type="number" class="form-control form-control-sm" id="number" min=1>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- removeModal -->
+    <div class="modal fade" id="removemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   是否確認刪除訂單
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">否</button>
+                    <button type="button" class="btn btn-outline-danger btn-lg">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#editmodal').on('show.bs.modal', function (e) {
+                var target = $(e.relatedTarget);
+                var title = target.data("title");
+                $(this).find('.modal-title').text(title);
+            });
+            
+            $('#removemodal').on('show.bs.modal', function (e) {
+                var target = $(e.relatedTarget);
+                var title = target.data("title");
+                $(this).find('.modal-title').text('確認刪除 ' + title);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
